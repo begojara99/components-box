@@ -1,7 +1,7 @@
-import { PrimaryInput, PasswordInput } from "../components/atoms/Input";
+import { PrimaryInput, PasswordInput } from "../components/atoms/input";
 import { useState } from "react";
 
-export default function LoginForm() {
+export default function InputSection() {
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Route, Routes } from "react-router-dom";
-import LoginForm from "./Display/Input.display";
+import InputSection from "./Display/Input.display";
+import ButtonSection from "./Display/Button.display";
 
 const Root = styled.div`
   position: absolute;
@@ -14,8 +15,8 @@ function App() {
   return (
     <Root>
       <Routes>
-        <Route path="/" element={<LoginForm />} />
-        {/* <Route path="/" element={<Login />} /> */}
+        <Route path="/input" element={<InputSection />} />
+        <Route path="/button" element={<ButtonSection />} />
       </Routes>
     </Root>
   );

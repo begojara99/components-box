@@ -1,8 +1,5 @@
 import styled from "styled-components";
-
-interface ErrorLabelProps {
-  children: React.ReactNode;
-}
+import { LabelProps } from "./labelTypes";
 
 const StyledError = styled.span`
   font-size: 12px;
@@ -10,6 +7,6 @@ const StyledError = styled.span`
   margin-top: 4px;
 `;
 
-export const ErrorLabel = ({ children }: ErrorLabelProps) => {
+export const ErrorLabel = ({ children }: LabelProps) => {
   return <StyledError>{children}</StyledError>;
 };

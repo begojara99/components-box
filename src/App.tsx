@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Route, Routes } from "react-router-dom";
 import InputSection from "./Display/Input.display";
 import ButtonSection from "./Display/Button.display";
+import LabelSection from "./Display/Label.display";
 
 const Root = styled.div`
   position: absolute;
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/input" element={<InputSection />} />
         <Route path="/button" element={<ButtonSection />} />
+        <Route path="/label" element={<LabelSection />} />
       </Routes>
     </Root>
   );

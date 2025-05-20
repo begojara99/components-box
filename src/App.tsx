@@ -6,6 +6,7 @@ import LabelSection from "./Display/Label.display";
 import LoginForm from "./Display/InputField.display";
 import LoginPage from "./Display/AuthForm.display";
 import LabeledInputForm from "./Display/LabeledInputForm.display";
+import SearchBarForm from "./Display/SearchBarForm.display";
 
 const Root = styled.div`
   position: absolute;
@@ -25,6 +26,7 @@ function App() {
         <Route path="/login-form" element={<LoginForm />} />
         <Route path="/login-page" element={<LoginPage />} />
         <Route path="/label-input-form" element={<LabeledInputForm />} />
+        <Route path="/searchbar" element={<SearchBarForm />} />
       </Routes>
     </Root>
   );

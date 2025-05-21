@@ -3,6 +3,11 @@ import { Route, Routes } from "react-router-dom";
 import InputSection from "./Display/Input.display";
 import ButtonSection from "./Display/Button.display";
 import LabelSection from "./Display/Label.display";
+import LoginForm from "./Display/InputField.display";
+import LoginPage from "./Display/AuthForm.display";
+import LabeledInputForm from "./Display/LabeledInputForm.display";
+import SearchBarForm from "./Display/SearchBarForm.display";
+import ProfileFormSection from "./Display/ProfileFormSection.display";
 
 const Root = styled.div`
   position: absolute;
@@ -19,6 +24,11 @@ function App() {
         <Route path="/input" element={<InputSection />} />
         <Route path="/button" element={<ButtonSection />} />
         <Route path="/label" element={<LabelSection />} />
+        <Route path="/login-form" element={<LoginForm />} />
+        <Route path="/login-page" element={<LoginPage />} />
+        <Route path="/label-input-form" element={<LabeledInputForm />} />
+        <Route path="/searchbar" element={<SearchBarForm />} />
+        <Route path="/profile-form" element={<ProfileFormSection />} />
       </Routes>
     </Root>
   );

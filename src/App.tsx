@@ -11,6 +11,7 @@ import ProfileFormSection from "./Display/ProfileFormSection.display";
 import TestProductCard from "./Display/TestProductCard.display";
 import TestProfileCard from "./Display/TestProfileCard.display";
 import DashboardStat from "./Display/DashboardStat.display";
+import UserCardSection from "./Display/UserCardSection.display";
 
 const Root = styled.div`
   position: absolute;
@@ -35,6 +36,7 @@ function App() {
         <Route path="/product-card" element={<TestProductCard />} />
         <Route path="/profile-card" element={<TestProfileCard />} />
         <Route path="/dashboard-stat-card" element={<DashboardStat />} />
+        <Route path="/user-card" element={<UserCardSection />} />
       </Routes>
     </Root>
   );

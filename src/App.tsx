@@ -14,6 +14,7 @@ import DashboardStat from "./Display/DashboardStat.display";
 import UserCardSection from "./Display/UserCardSection.display";
 import TestHeader from "./Display/TestHeader.display";
 import TestFooter from "./Display/TestFooter.display";
+import TestSidebar from "./Display/TestSidebar.display";
 
 const Root = styled.div`
   position: absolute;
@@ -41,6 +42,7 @@ function App() {
         <Route path="/user-card" element={<UserCardSection />} />
         <Route path="/header" element={<TestHeader />} />
         <Route path="/footer" element={<TestFooter />} />
+        <Route path="/sidebar" element={<TestSidebar />} />
       </Routes>
     </Root>
   );

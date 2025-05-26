@@ -1,4 +1,4 @@
-import { Header } from "../components/organisms/Header";
+import { Header } from "../components/organisms/header";
 import { Search } from "lucide-react";
 import { IconWrapper } from "../components/atoms/icon/IconWrapper";
 

@@ -8,6 +8,14 @@ import LoginPage from "./Display/AuthForm.display";
 import LabeledInputForm from "./Display/LabeledInputForm.display";
 import SearchBarForm from "./Display/SearchBarForm.display";
 import ProfileFormSection from "./Display/ProfileFormSection.display";
+import TestProductCard from "./Display/TestProductCard.display";
+import TestProfileCard from "./Display/TestProfileCard.display";
+import DashboardStat from "./Display/DashboardStat.display";
+import UserCardSection from "./Display/UserCardSection.display";
+import TestHeader from "./Display/TestHeader.display";
+import TestFooter from "./Display/TestFooter.display";
+import TestSidebar from "./Display/TestSidebar.display";
+import TestModal from "./Display/TestModal.display";
 
 const Root = styled.div`
   position: absolute;
@@ -29,6 +37,14 @@ function App() {
         <Route path="/label-input-form" element={<LabeledInputForm />} />
         <Route path="/searchbar" element={<SearchBarForm />} />
         <Route path="/profile-form" element={<ProfileFormSection />} />
+        <Route path="/product-card" element={<TestProductCard />} />
+        <Route path="/profile-card" element={<TestProfileCard />} />
+        <Route path="/dashboard-stat-card" element={<DashboardStat />} />
+        <Route path="/user-card" element={<UserCardSection />} />
+        <Route path="/header" element={<TestHeader />} />
+        <Route path="/footer" element={<TestFooter />} />
+        <Route path="/sidebar" element={<TestSidebar />} />
+        <Route path="/modal" element={<TestModal />} />
       </Routes>
     </Root>
   );

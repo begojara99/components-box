@@ -16,6 +16,7 @@ import TestHeader from "./Display/TestHeader.display";
 import TestFooter from "./Display/TestFooter.display";
 import TestSidebar from "./Display/TestSidebar.display";
 import TestModal from "./Display/TestModal.display";
+import LoginTemplate from "./Display/LoginTemplate.display";
 
 const Root = styled.div`
   position: absolute;
@@ -32,8 +33,8 @@ function App() {
         <Route path="/input" element={<InputSection />} />
         <Route path="/button" element={<ButtonSection />} />
         <Route path="/label" element={<LabelSection />} />
-        <Route path="/login-form" element={<LoginForm />} />
-        <Route path="/login-page" element={<LoginPage />} />
+        <Route path="/input-form" element={<LoginForm />} />
+        <Route path="/auth-page" element={<LoginPage />} />
         <Route path="/label-input-form" element={<LabeledInputForm />} />
         <Route path="/searchbar" element={<SearchBarForm />} />
         <Route path="/profile-form" element={<ProfileFormSection />} />
@@ -45,6 +46,7 @@ function App() {
         <Route path="/footer" element={<TestFooter />} />
         <Route path="/sidebar" element={<TestSidebar />} />
         <Route path="/modal" element={<TestModal />} />
+        <Route path="/login-template" element={<LoginTemplate />} />
       </Routes>
     </Root>
   );

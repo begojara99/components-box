@@ -17,6 +17,7 @@ import TestFooter from "./Display/TestFooter.display";
 import TestSidebar from "./Display/TestSidebar.display";
 import TestModal from "./Display/TestModal.display";
 import LoginTemplate from "./Display/LoginTemplate.display";
+import DashboardTemplate from "./Display/DashboardTemplate.display";
 
 const Root = styled.div`
   position: absolute;
@@ -47,6 +48,7 @@ function App() {
         <Route path="/sidebar" element={<TestSidebar />} />
         <Route path="/modal" element={<TestModal />} />
         <Route path="/login-template" element={<LoginTemplate />} />
+        <Route path="/dashboard-template" element={<DashboardTemplate />} />
       </Routes>
     </Root>
   );

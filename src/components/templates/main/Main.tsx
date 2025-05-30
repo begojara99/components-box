@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainTemplateProps } from "./mainTemplateTypes";
+import { MainProps } from "./mainTypes";
 import { Header } from "../../organisms/header";
 import { Sidebar } from "../../organisms/sidebar";
 import { LayoutDashboard, Settings } from "lucide-react";
@@ -23,7 +23,7 @@ const MainContent = styled.main`
   background-color: #f9fafb;
 `;
 
-export const MainTemplate = ({ children }: MainTemplateProps) => {
+export const Main = ({ children }: MainProps) => {
   return (
     <Layout>
       <Header />

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AuthTemplateProps } from "./authTemplateTypes";
+import { AuthProps } from "./authTypes";
 
 const Wrapper = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ const Box = styled.div`
   align-items: center;
 `;
 
-export const AuthTemplate = ({ children }: AuthTemplateProps) => {
+export const Auth = ({ children }: AuthProps) => {
   return (
     <Wrapper>
       <Box>

@@ -19,6 +19,7 @@ import TestModal from "./Display/TestModal.display";
 import LoginTemplate from "./Display/LoginTemplate.display";
 import DashboardTemplate from "./Display/DashboardTemplate.display";
 import DeleteConfirmModal from "./Display/DeleteConfirmModal.display";
+import { NoResult } from "./Display/NoResult.display";
 
 const Root = styled.div`
   position: absolute;
@@ -51,6 +52,7 @@ function App() {
         <Route path="/login-template" element={<LoginTemplate />} />
         <Route path="/dashboard-template" element={<DashboardTemplate />} />
         <Route path="/modal-template" element={<DeleteConfirmModal />} />
+        <Route path="/noresult-template" element={<NoResult />} />
       </Routes>
     </Root>
   );

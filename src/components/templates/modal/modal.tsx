@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
-import { ModalTemplateProps } from "./modalTemplateTypes";
+import { ModalProps } from "./modalTypes";
 
 const Overlay = styled.div`
   position: fixed;
@@ -30,12 +30,7 @@ const Title = styled.h2`
   font-weight: bold;
 `;
 
-export const ModalTemplate = ({
-  isOpen,
-  onClose,
-  title,
-  children,
-}: ModalTemplateProps) => {
+export const Modal = ({ isOpen, onClose, title, children }: ModalProps) => {
   if (!isOpen) return null;
 
   return ReactDOM.createPortal(

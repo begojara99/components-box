@@ -1,10 +1,10 @@
-import { AuthTemplate } from "../components/templates/authtemplate";
+import { Auth } from "../components/templates/auth";
 import { AuthForm } from "../components/molecules/authForm";
 
 export default function LoginTemplate() {
   return (
-    <AuthTemplate>
+    <Auth>
       <AuthForm />
-    </AuthTemplate>
+    </Auth>
   );
 }

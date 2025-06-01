@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FormTemplate } from "@/components/templates/formTemplate/FormTemplate";
+import { Form } from "../../templates/form";
 import { AuthForm } from "../../molecules/authForm";
 import { LoginFormState } from "./loginTypes";
 
@@ -21,7 +21,7 @@ const LoginPage = () => {
   };
 
   return (
-    <FormTemplate title="로그인" onSubmit={handleSubmit}>
+    <Form title="로그인" onSubmit={handleSubmit}>
       <AuthForm
         fields={[
           {
@@ -42,7 +42,7 @@ const LoginPage = () => {
         ]}
         buttonText="로그인"
       />
-    </FormTemplate>
+    </Form>
   );
 };
 

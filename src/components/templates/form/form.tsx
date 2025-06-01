@@ -25,12 +25,25 @@ const Content = styled.div`
   max-width: 400px;
 `;
 
-export const Form = ({ title, subtitle, children }: FormTemplateProps) => {
+export const Form = ({
+  title,
+  subtitle,
+  children,
+  onSubmit,
+}: FormTemplateProps) => {
   return (
     <Wrapper>
       <Title>{title}</Title>
       {subtitle && <Subtitle>{subtitle}</Subtitle>}
-      <Content>{children}</Content>
+      <Content
+        as="form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          onSubmit?.();
+        }}
+      >
+        {children}
+      </Content>
     </Wrapper>
   );
 };

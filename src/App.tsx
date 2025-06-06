@@ -4,7 +4,7 @@ import InputSection from "./Display/Input.display";
 import ButtonSection from "./Display/Button.display";
 import LabelSection from "./Display/Label.display";
 import LoginForm from "./Display/InputField.display";
-import LoginPage from "./Display/AuthForm.display";
+import TestLogin from "./Display/AuthForm.display";
 import LabeledInputForm from "./Display/LabeledInputForm.display";
 import SearchBarForm from "./Display/SearchBarForm.display";
 import ProfileFormSection from "./Display/ProfileFormSection.display";
@@ -20,6 +20,12 @@ import LoginTemplate from "./Display/LoginTemplate.display";
 import DashboardTemplate from "./Display/DashboardTemplate.display";
 import DeleteConfirmModal from "./Display/DeleteConfirmModal.display";
 import { NoResult } from "./Display/NoResult.display";
+import DashboardPage from "./components/pages/dashboard/dashboard";
+import LoginPage from "./components/pages/login/Login";
+import SignupPage from "./components/pages/signup/Signup";
+import SignupCompletePage from "./components/pages/signup/SignupComplete";
+import NotFoundPage from "./components/pages/notfound/NotFound";
+import SettingsPage from "./components/pages/setting/setting";
 
 const Root = styled.div`
   position: absolute;
@@ -37,7 +43,7 @@ function App() {
         <Route path="/button" element={<ButtonSection />} />
         <Route path="/label" element={<LabelSection />} />
         <Route path="/input-form" element={<LoginForm />} />
-        <Route path="/auth-page" element={<LoginPage />} />
+        <Route path="/auth-page" element={<TestLogin />} />
         <Route path="/label-input-form" element={<LabeledInputForm />} />
         <Route path="/searchbar" element={<SearchBarForm />} />
         <Route path="/profile-form" element={<ProfileFormSection />} />
@@ -53,6 +59,13 @@ function App() {
         <Route path="/dashboard-template" element={<DashboardTemplate />} />
         <Route path="/modal-template" element={<DeleteConfirmModal />} />
         <Route path="/noresult-template" element={<NoResult />} />
+
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/signup-complete" element={<SignupCompletePage />} />
+        <Route path="/404" element={<NotFoundPage />} />
+        <Route path="/setting" element={<SettingsPage />} />
       </Routes>
     </Root>
   );

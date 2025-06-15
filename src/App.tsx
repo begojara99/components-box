@@ -1,31 +1,32 @@
 import styled from "styled-components";
 import { Route, Routes } from "react-router-dom";
-import InputSection from "./Display/Input.display";
-import ButtonSection from "./Display/Button.display";
-import LabelSection from "./Display/Label.display";
-import LoginForm from "./Display/InputField.display";
-import TestLogin from "./Display/AuthForm.display";
-import LabeledInputForm from "./Display/LabeledInputForm.display";
-import SearchBarForm from "./Display/SearchBarForm.display";
-import ProfileFormSection from "./Display/ProfileFormSection.display";
-import TestProductCard from "./Display/TestProductCard.display";
-import TestProfileCard from "./Display/TestProfileCard.display";
-import DashboardStat from "./Display/DashboardStat.display";
-import UserCardSection from "./Display/UserCardSection.display";
-import TestHeader from "./Display/TestHeader.display";
-import TestFooter from "./Display/TestFooter.display";
-import TestSidebar from "./Display/TestSidebar.display";
-import TestModal from "./Display/TestModal.display";
-import LoginTemplate from "./Display/LoginTemplate.display";
-import DashboardTemplate from "./Display/DashboardTemplate.display";
-import DeleteConfirmModal from "./Display/DeleteConfirmModal.display";
-import { NoResult } from "./Display/NoResult.display";
+import InputSection from "./display/Input.display";
+import ButtonSection from "./display/Button.display";
+import LabelSection from "./display/Label.display";
+import LoginForm from "./display/InputField.display";
+import TestLogin from "./display/AuthForm.display";
+import LabeledInputForm from "./display/LabeledInputForm.display";
+import SearchBarForm from "./display/SearchBarForm.display";
+import ProfileFormSection from "./display/ProfileFormSection.display";
+import TestProductCard from "./display/TestProductCard.display";
+import TestProfileCard from "./display/TestProfileCard.display";
+import DashboardStat from "./display/DashboardStat.display";
+import UserCardSection from "./display/UserCardSection.display";
+import TestHeader from "./display/TestHeader.display";
+import TestFooter from "./display/TestFooter.display";
+import TestSidebar from "./display/TestSidebar.display";
+import TestModal from "./display/TestModal.display";
+import LoginTemplate from "./display/LoginTemplate.display";
+import DashboardTemplate from "./display/DashboardTemplate.display";
+import DeleteConfirmModal from "./display/DeleteConfirmModal.display";
+import { NoResult } from "./display/NoResult.display";
 import DashboardPage from "./components/pages/dashboard/dashboard";
 import LoginPage from "./components/pages/login/Login";
 import SignupPage from "./components/pages/signup/Signup";
 import SignupCompletePage from "./components/pages/signup/SignupComplete";
 import NotFoundPage from "./components/pages/notfound/NotFound";
 import SettingsPage from "./components/pages/setting/setting";
+import HomePage from "./pages/Home";
 
 const Root = styled.div`
   position: absolute;
@@ -39,6 +40,7 @@ function App() {
   return (
     <Root>
       <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/input" element={<InputSection />} />
         <Route path="/button" element={<ButtonSection />} />
         <Route path="/label" element={<LabelSection />} />
